@@ -1,0 +1,37 @@
+* What decisions or assumptions did you make about how to design your program?
+
+I separate objects into the ‘maze_location’ and ‘maze_person.’ Wall and open space got the inheritance from the maze_location and TA, 
+instructor, and player are an inheritance from the maze_person. After setting up the basic objects, I made the class for the entire maze. 
+This class is for setting up the gameplay such ‘Touch_TA’, ‘Touch_instructor’, ‘or ‘reset the maze.’ It has big rules that can apply to every maze_level. 
+As like this, I focus on making big object and break it into small objects.
+
+* What was your test plan for your program?
+
+First I start checking 2D vector is working correctly as I wrote on the computer. Instead of making Ta or skill object, I only make it print out the wall and
+open space to see the program prints out the maze correctly. After that, I made maze_level to see the program perfectly print out three different level mazes.
+When the program successfully prints the maze, I make the player object to check the wall correctly blocked the object to not pass. When the program starts, 
+I wrote the code to print out the TAs and skills locations to keep tracking the code generate the random location correctly. 
+Every time when I add Ta, instructor, player, skills objects in the maze I always run the program through the “valgrid.” 
+
+* How did your testing work out? What bugs did you uncover through testing? How did you fix those bugs?
+
+I had the one big error while the program generating the maze with the 2D vector. When the program about the make the wall object it always show up the <segfault>
+error. So I bring the code to the CS Tutoring center and get the help with using 2D vector correctly. I thought the main problem was coming from not “push_back”
+but it was not. I had the wrong knowledge of using 2D vector. It has to use like handling 2D array.
+
+* What problems or obstacles did you run into while you were developing your program? How did you resolve these?
+
+The biggest issue in this program was time. Due to having three final, I need more time to study other subjects than working on the code
+so I decide to do coding at night time when the study is over. Other than that I did not had any major issue that makes me stop coding. 
+To save time on coding, I always write down what subjects I want to work on and later I combined them like the puzzle. 
+Diving was helping me to know what kind of function has to be written before start  working on the next step.
+
+
+* What resources were useful to you in solving problems you ran into? Were there helpful websites or Stack Overflow posts? 
+  What help did you get from the TAs and/or the Instructor? Were specific parts of the course notes helpful?
+
+Mainly, Hunting wumpus was the good resources in this assignment because setting up the bat, wumpus, gold, and holes are the same concept
+of placing Ta, skills, and instructor. I catch most concepts from the previous assignment. The useful website is “http://www.cplusplus.com” because
+it has the explanation of the inheritance, polymorphism, class, and etc.. with example codes, it really helps to understand and know how to use them 
+at the same time. This website really helps me to understand I miss in the lecture. I also got the help from several Tas about using the vector and 
+checking the memory leak.  
