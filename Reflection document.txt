@@ -1,8 +1,8 @@
-* What decisions or assumptions did you make about how to design your program?
+* What decisions or assumptions did you make about how to design your program?.
 
-I separate objects into the ëmaze_locationí and ëmaze_person.í Wall and open space got the inheritance from the maze_location and TA, 
+I separate objects into the ‚Äòmaze_location‚Äô and ‚Äòmaze_person.‚Äô Wall and open space got the inheritance from the maze_location and TA, 
 instructor, and player are an inheritance from the maze_person. After setting up the basic objects, I made the class for the entire maze. 
-This class is for setting up the gameplay such ëTouch_TAí, ëTouch_instructorí, ëor ëreset the maze.í It has big rules that can apply to every maze_level. 
+This class is for setting up the gameplay such ‚ÄòTouch_TA‚Äô, ‚ÄòTouch_instructor‚Äô, ‚Äòor ‚Äòreset the maze.‚Äô It has big rules that can apply to every maze_level. 
 As like this, I focus on making big object and break it into small objects.
 
 * What was your test plan for your program?
@@ -11,12 +11,12 @@ First I start checking 2D vector is working correctly as I wrote on the computer
 open space to see the program prints out the maze correctly. After that, I made maze_level to see the program perfectly print out three different level mazes.
 When the program successfully prints the maze, I make the player object to check the wall correctly blocked the object to not pass. When the program starts, 
 I wrote the code to print out the TAs and skills locations to keep tracking the code generate the random location correctly. 
-Every time when I add Ta, instructor, player, skills objects in the maze I always run the program through the ìvalgrid.î 
+Every time when I add Ta, instructor, player, skills objects in the maze I always run the program through the ‚Äúvalgrid.‚Äù 
 
 * How did your testing work out? What bugs did you uncover through testing? How did you fix those bugs?
 
 I had the one big error while the program generating the maze with the 2D vector. When the program about the make the wall object it always show up the <segfault>
-error. So I bring the code to the CS Tutoring center and get the help with using 2D vector correctly. I thought the main problem was coming from not ìpush_backî
+error. So I bring the code to the CS Tutoring center and get the help with using 2D vector correctly. I thought the main problem was coming from not ‚Äúpush_back‚Äù
 but it was not. I had the wrong knowledge of using 2D vector. It has to use like handling 2D array.
 
 * What problems or obstacles did you run into while you were developing your program? How did you resolve these?
@@ -31,7 +31,7 @@ Diving was helping me to know what kind of function has to be written before sta
   What help did you get from the TAs and/or the Instructor? Were specific parts of the course notes helpful?
 
 Mainly, Hunting wumpus was the good resources in this assignment because setting up the bat, wumpus, gold, and holes are the same concept
-of placing Ta, skills, and instructor. I catch most concepts from the previous assignment. The useful website is ìhttp://www.cplusplus.comî because
+of placing Ta, skills, and instructor. I catch most concepts from the previous assignment. The useful website is ‚Äúhttp://www.cplusplus.com‚Äù because
 it has the explanation of the inheritance, polymorphism, class, and etc.. with example codes, it really helps to understand and know how to use them 
 at the same time. This website really helps me to understand I miss in the lecture. I also got the help from several Tas about using the vector and 
 checking the memory leak.  
